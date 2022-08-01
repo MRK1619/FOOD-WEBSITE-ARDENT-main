@@ -1,0 +1,40 @@
+.div-col-lg {
+
+    padding-top: 20px;
+}
+
+.div-con-fl {
+
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.div-col-sm {
+
+    text-align: left;
+}
+
+.div-box {
+
+    margin-top: 10px;
+}
+
+.div-col-2 {
+
+    text-align: right;
+}
+
+.div-col {
+
+    text-align: left;
+}
+
+.card {
+
+    width: 160%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background: rgb(205,0,255);
+    background: linear-gradient(180deg, rgba(205,0,255,1) 0%, rgba(5,255,0,1) 50%, rgba(0,212,255,1) 100%);
+}

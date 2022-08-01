@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.component.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid text-center">
+
+        <h1>{{title}}</h1>
+
+    </div>
+
+    <div class="container">
+
+        <ul class="nav">
+
+            <li class="nav-item">
+
+                <a href="#" class="nav-link" routerLink="/home"><i class="fas fa-home"></i> HOME</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a href="#" class="nav-link" routerLink="/about"><i class="fas fa-mobile"></i> ABOUT</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a href="#" class="nav-link" routerLink="/expenses/add"><i class="fas fa-square-plus"></i> ADD EXPENSE</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a href="#" class="nav-link" routerLink="/expenses"><i class="fas fa-envelope"></i> REPORT</a>
+
+            </li>
+
+            <li class="nav-item">
+                <div *ngIf="isUserLoggedIn; else isLogOut">
+                      <a class="nav-link" routerLink="/logout">Logout</a>
+                </div>
+
+                <ng-template #isLogOut>
+                            <a class="nav-link" routerLink="/login">Login</a>
+                </ng-template>
+    </li>
+
+            <div class="nav-item dropdown">
+
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    MENU
+
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                    <a href="#" class="dropdown-item">INDIAN ITEM</a>
+                    <a href="#" class="dropdown-item">ITALIAN ITEM</a>
+                    <a href="#" class="dropdown-item">CHINESE ITEM</a>
+
+                </div>
+
+            </div>
+
+        </ul>
+
+    </div>
+
+    
+    
+    
+</body>
+
+</html>
+<router-outlet></router-outlet>
